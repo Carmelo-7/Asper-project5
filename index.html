@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 5</title>
+</head>
+
+<body>
+    <nav class="navbar p-3 navbar-expand-md expand-right navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand lead fw-5" href="#">TRAVEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#footer">Footer</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel"
+        data-bs-interval="4000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1600x700/?beach" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x700/?riodejaniero" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x700/?himalayas" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid bg-light p-3 my-2" id="about">
+
+        <div class="heading d-flex flex-nowrap align-items-center justify-content-between">
+            <hr class="w-25 mx-auto">
+            <h2 class="text-center p-1">About Us</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+            <div class="row p-5 my-3 g-4">
+                <img src="https://source.unsplash.com/1600x700/?paris" class="col-lg" alt="">
+                <div class="col-lg d-flex flex-column justify-content-evenly align-items-start">
+                    <h3 class="text-left">Who Am I?</h3>
+                    <p class="fs-7 text-wrap lh-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo
+                        qui
+                        corrupti recusandae tempore ullam, optio accusantium impedit eum a repudiandae ratione! Velit,
+                        ut
+                        placeat! Iusto soluta omnis eaque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae, quod illum! Voluptates pariatur cum harum in laboriosam. Nihil, corrupti aliquid!
+                    </p>
+                    <button type="button" class="btn btn-dark text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal1">Know More..</button>
+                </div>
+            </div>
+            <div class="row p-5 my-3 g-4 d-flex flex-column-reverse flex-lg-row">
+
+                <div class="col-lg d-flex flex-column justify-content-evenly align-items-start">
+                    <h3 class="text-left">Who Am I?</h3>
+                    <p class="fs-7 text-wrap lh-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo
+                        qui
+                        corrupti recusandae tempore ullam, optio accusantium impedit eum a repudiandae ratione! Velit,
+                        ut
+                        placeat! Iusto soluta omnis eaque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae, quod illum! Voluptates pariatur cum harum in laboriosam. Nihil, corrupti aliquid!
+                    </p>
+                    <button type="button" class="btn btn-dark text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal2">Know More..</button>
+
+                </div>
+                <img src="https://source.unsplash.com/1600x700/?japan" class="col-lg" alt="">
+            </div>
+            <div class="row p-5 my-3 g-4">
+                <img src="https://source.unsplash.com/1600x700/?kangaroos" class="col-lg" alt="">
+                <div class="col-lg d-flex flex-column justify-content-evenly align-items-start">
+                    <h3 class="text-left">Who Am I?</h3>
+                    <p class="fs-7 text-wrap lh-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo
+                        qui
+                        corrupti recusandae tempore ullam, optio accusantium impedit eum a repudiandae ratione! Velit,
+                        ut
+                        placeat! Iusto soluta omnis eaque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae, quod illum! Voluptates pariatur cum harum in laboriosam. Nihil, corrupti aliquid!
+                    </p>
+                    <button type="button" class="btn btn-dark text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal3">Know More..</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light p-3 my-2" id="services">
+
+        <div class="heading d-flex flex-nowrap align-items-center justify-content-between">
+            <hr class="w-25 mx-auto">
+            <h2 class="text-center p-1">Services</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container-fluid d-flex align-items-center flex-wrap justify-content-between p-5">
+            <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/1600x700/?hiking" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-dark">Read More..</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/1600x700/?biking" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-dark">Read More..</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/1600x700/?surfing" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-dark">Read More..</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section class="bg-light text-center p-5" id="contact">
+        <h2 class="my-4"> Call On <span class="text-primary">+92-921291290</span></h2>
+        <h6 class="my-4">If you want the best services</h6>
+        <button class="my-4 btn btn-dark p-3">Contact Now</button>
+    </section>
+
+    <section id="gallery" class="container-fluid p-5 bg-white">
+        <div class="heading d-flex flex-nowrap align-items-center justify-content-between">
+            <hr class="w-25 mx-auto">
+            <h2 class="text-center p-1">Gallery</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+        <div class="row my-4">
+            <img src="https://source.unsplash.com/1600x900/?travel,hike" class="col" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,surf" class="col" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,climb" class="col" alt="">
+
+        </div>
+        <div class="row my-4">
+            <img src="https://source.unsplash.com/1600x900/?travel,swim" class="col-8" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,beach" class="col-4" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,rocks" class="col-12 my-2 img-fluid" alt="">
+
+        </div>
+        <div class="row my-4">
+            <img src="https://source.unsplash.com/1600x900/?travel,camp" class="col" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,bonfire" class="col" alt="">
+            <img src="https://source.unsplash.com/1600x900/?travel,nostalgia" class="col" alt="">
+
+        </div>
+    </section>
+
+  
+  
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Paris, France </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/1600x700/?paris" class="p-3 img-fluid" alt="">
+                    <p class="lh-2 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolorem!
+                        Adipisci, nisi suscipit. Eligendi quasi laboriosam beatae suscipit aliquam, modi ex consectetur
+                        eum cupiditate ullam. Porro, consequuntur? Sit at illum tempora accusamus magnam et impedit
+                        porro explicabo cupiditate sapiente enim consequatur aperiam, unde perspiciatis alias
+                        accusantium obcaecati! Dolorem, velit omnis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Kyoto, Japan </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/1600x700/?japan" class="p-3 img-fluid" alt="">
+                    <p class="lh-2 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolorem!
+                        Adipisci, nisi suscipit. Eligendi quasi laboriosam beatae suscipit aliquam, modi ex consectetur
+                        eum cupiditate ullam. Porro, consequuntur? Sit at illum tempora accusamus magnam et impedit
+                        porro explicabo cupiditate sapiente enim consequatur aperiam, unde perspiciatis alias
+                        accusantium obcaecati! Dolorem, velit omnis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Perth, Australia </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/1600x700/?paris" class="p-3 img-fluid" alt="">
+                    <p class="lh-2 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolorem!
+                        Adipisci, nisi suscipit. Eligendi quasi laboriosam beatae suscipit aliquam, modi ex consectetur
+                        eum cupiditate ullam. Porro, consequuntur? Sit at illum tempora accusamus magnam et impedit
+                        porro explicabo cupiditate sapiente enim consequatur aperiam, unde perspiciatis alias
+                        accusantium obcaecati! Dolorem, velit omnis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-5" id="footer">
+        <div class="row">
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>© 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
